@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GreetingController</title>
+    <style>
+        .greeting div{
+            padding: 10px;
+            border: solid 2px red;
+        }
+    </style>
+</head>
+<body ng-app="myApp">
+<div class="greeting">
+    <div ng-controller="MainController">
+        <p>Good {{timeOfDay}}, {{name}}!</p>
+
+        <div ng-controller="ChildController">
+            <p>Good {{timeOfDay}}, {{name}}!</p>
+
+            <div ng-controller="GrandChildController">
+                <p>Good {{timeOfDay}}, {{name}}!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../bower_components/angular/angular.js"></script>
+<script src="greeting.js"></script>
+</body>
+</html>

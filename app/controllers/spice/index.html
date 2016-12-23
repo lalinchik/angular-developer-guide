@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spice</title>
+</head>
+<body ng-app="spicyApp">
+<div ng-controller="SpicyController">
+    <input ng-model="customSpice">
+    <button ng-click="spicy(customSpice)">CustomSpice</button>
+    <button ng-click="spicy('chili')">Chili</button>
+    <button ng-click="spicy('jalapeno')">Jalapeno</button>
+    <p>The food is {{spice}} spicy!</p>
+</div>
+
+<script src="../../bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
